@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: rgba(0,0,0,0.1);
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* ------------ container ------------ */
@@ -44,7 +44,7 @@ body{
     left: 10px;
     color: #FFF;
     font-size: 25px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* ------------ content ------------ */
@@ -91,9 +91,10 @@ body{
     margin:0;
     font-size: 20px;
     left:50px;
-    top:5px;
+    top:10px;
     background-color: #FFF;
     max-width:285px;
+
 }
 .lineThrough{
     text-decoration: line-through;
@@ -136,21 +137,21 @@ body{
 }
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
     color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
     color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
     color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }

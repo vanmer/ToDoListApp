@@ -12,7 +12,7 @@ const LINE_THROUGH = "lineThrough";
 // variables
 let List, id;
 
-// get item from local storage
+// get item from localStorage
 let data = localStorage.getItem("TODO");
 
 // check if data is not empty
@@ -32,6 +32,12 @@ function loadList(array) {
     addToDo(item.name, item.id, item.done, item.trash);
   });
 }
+
+// clear the localStorage
+clear.addEventListener("click", function() {
+  localStorage.clear();
+  location.reload();
+})
 
 // display todays date
 const options = {
@@ -77,7 +83,7 @@ document.addEventListener("keyup", function(event) {
         trash: false
       });
 
-      // add item from local storage
+      // add item from localStorage
       localStorage.setItem("TODO", JSON.stringify(LIST));
       id++;
     }
@@ -112,6 +118,6 @@ list.addEventListener("click", function(event) {
     removeToDo(element);
   }
 
-  // add item from local storage
+  // add item from localStorage
   localStorage.setItem("TODO", JSON.stringify(LIST));
 })

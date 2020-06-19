@@ -10,12 +10,28 @@ const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
 
 // variables
-let LIST = [];
-let id = 0;
+let List, id;
 
 // get item from local storage
 let data = localStorage.getItem("TODO");
 
+// check if data is not empty
+if (data) {
+  LIST = JSON.parse(data);
+  id = LIST.length; // set the id to the last item of the list
+  loadList(LIST); // load the list to the user interface
+} else {
+  // if data is not empty
+  LIST = [];
+  id = 0;
+}
+
+// load items to the users interface
+function loadList(array) {
+  array.forEach(function(item) {
+    addToDo(item.name, item.id, item.done, item.trash);
+  });
+}
 
 // display todays date
 const options = {

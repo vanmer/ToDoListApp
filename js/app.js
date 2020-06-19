@@ -1,6 +1,7 @@
 // select the elements
 const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
+const yearElement = document.getElementById("year");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 
@@ -47,6 +48,12 @@ const options = {
 }
 const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+
+// display year
+const yearOption = {
+  year: "numeric",
+}
+yearElement.innerHTML = today.toLocaleDateString("en-US", yearOption);
 
 // add to-Do function
 function addToDo(toDo, id, done, trash) {

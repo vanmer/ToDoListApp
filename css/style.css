@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background-color: rgba(0,0,0,0.1);
@@ -6,14 +6,14 @@ body{
 }
 
 /* ------------ container ------------ */
-.container{
+.container {
     padding:10px;
     width:380px;
     margin:0 auto;
 }
 
 /* ------------ header ------------ */
-.header{
+.header {
     width: 380px;
     height:200px;
     background-image: url('../img/bg.jpg');
@@ -22,33 +22,40 @@ body{
     border-radius: 15px 15px 0 0;
     position: relative;
 }
-.clear{
+.clear {
     width : 30px;
     height: 30px;
     position: absolute;
     right:20px;
     top: 20px;
 }
-.clear i{
+.clear i {
     font-size: 30px;
     color: #FFF;
 }
-.clear i:hover{
+.clear i:hover {
     cursor: pointer;
     text-shadow: 1px 3px 5px #000;
     transform: rotate(45deg);
 }
-#date{
+#year {
+  font-size: 40px;
+  color: #FFF;
+  position: absolute;
+  bottom: 40px;
+  left: 12px;
+}
+#date {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 12px;
+    left: 12px;
     color: #FFF;
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
 }
 
 /* ------------ content ------------ */
-.content{
+.content {
     width:380px;
     height: 350px;
     max-height:350px;
@@ -111,7 +118,7 @@ body{
     cursor: pointer;
 }
 /* ------------ add item ------------ */
-.add-to-do{
+.add-to-do {
     position: relative;
     width: 360px;
     height:40px;

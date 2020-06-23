@@ -7,9 +7,9 @@ body {
 
 /* ------------ container ------------ */
 .container {
-    padding:10px;
-    width:380px;
-    margin:0 auto;
+    padding: 10px;
+    width: 380px;
+    margin: 0 auto;
 }
 
 /* ------------ header ------------ */
@@ -65,11 +65,11 @@ body {
 .content::-webkit-scrollbar {
     display: none;
 }
-.content ul{
+.content ul {
     padding:0;
     margin:0;
 }
-.item{
+.item {
     width:380px;
     height: 45px;
     min-height: 45px;
@@ -79,17 +79,17 @@ body {
     padding: 0;
     margin: 0;
 }
-.item i.co{
+.item i.co {
     position: absolute;
     font-size: 25px;
     padding-left:5px;
     left:15px;
     top:10px;
 }
-.item i.co:hover{
+.item i.co:hover {
     cursor: pointer;
 }
-.fa-check-circle{
+.fa-check-circle {
     color:#6eb200;
 }
 .item p.text{
@@ -103,17 +103,17 @@ body {
     max-width:285px;
 
 }
-.lineThrough{
+.lineThrough {
     text-decoration: line-through;
     color : #ccc;
 }
-.item i.de{
+.item i.de {
     position: absolute;
     font-size: 25px;
     right:15px;
     top:10px;
 }
-.item i.de:hover{
+.item i.de:hover {
     color:#af0000;
     cursor: pointer;
 }
@@ -126,13 +126,13 @@ body {
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
-.add-to-do i{
+.add-to-do i {
     position: absolute;
     font-size: 40px;
     color: #4162f6;
 }
 
-.add-to-do input{
+.add-to-do input {
     position: absolute;
     left: 50px;
     height: 35px;

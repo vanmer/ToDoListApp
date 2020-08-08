@@ -146,6 +146,7 @@ body {
   background-color: #FFF;
   padding: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #fff;
 }
 .add-to-do i {
   position: absolute;
@@ -191,11 +192,13 @@ body {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .container {
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 100%;
+    
   }
   .container,
   .header,
@@ -209,7 +212,7 @@ body {
     height: 28vh;
   }
   .content {
-    height: 65vh;
+    height: 64vh;
   }
   .adding {
     height: 7vh;

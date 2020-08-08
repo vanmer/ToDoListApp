@@ -43,7 +43,7 @@ body {
   top: 20px;
 }
 .clear i {
-  font-size: 30px;
+  font-size: 37px;
   color: #FFF;
 }
 .clear i:hover {
@@ -146,13 +146,15 @@ body {
   background-color: #FFF;
   padding: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 4px solid #fff;
 }
 .add-to-do i {
   position: absolute;
   font-size: 40px;
   color: #003973;
   cursor: pointer;
+}
+.add-to-do i:hover {
+  opacity: 0.8;
 }
 .add-to-do input {
   position: absolute;
@@ -198,7 +200,6 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-    
   }
   .container,
   .header,
@@ -209,13 +210,15 @@ body {
   }
   .header {
     border-radius: 0;
-    height: 28vh;
+    height: 21vh;
   }
   .content {
-    height: 64vh;
+    height: 70vh;
   }
-  .adding {
-    height: 7vh;
+  .add-to-do {
+    height: 6vh;
   }
-
+  .clear i {
+    font-size: 42px;
+  }
 }

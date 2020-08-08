@@ -152,6 +152,7 @@ body {
   position: absolute;
   font-size: 40px;
   color: #003973;
+  cursor: pointer;
 }
 .add-to-do input {
   position: absolute;

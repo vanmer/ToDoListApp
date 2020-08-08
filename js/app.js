@@ -4,6 +4,7 @@ const dateElement = document.getElementById("date");
 const yearElement = document.getElementById("year");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
+const addBtn = document.getElementById("plus-button");
 
 // classes names
 const CHECK = "fa-check-circle";
@@ -96,6 +97,26 @@ document.addEventListener("keyup", function(event) {
     }
     input.value = "";
   }
+})
+
+// add item by clicking plus-button
+addBtn.addEventListener("click", function() {
+  const toDo = input.value;
+  // if the input is not empty
+  if (toDo) {
+    addToDo(toDo, id, false, false);
+    LIST.push({
+      name: toDo,
+      id: id,
+      done: false,
+      trash: false
+    });
+
+    // add item from localStorage
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+    id++;
+  }
+  input.value = "";
 })
 
 // complete to Do

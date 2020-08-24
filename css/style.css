@@ -225,4 +225,7 @@ body {
   .clear i {
     font-size: 42px;
   }
+  #year {
+    padding-bottom: 3px;
+  }
 }
